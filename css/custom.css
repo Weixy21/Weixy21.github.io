@@ -4,3 +4,11 @@
     color: #777;
     border-top: 1px solid #e5e5e5;
 }
+
+.ScrollStyle
+{
+    float:left;
+    width:1000px;
+    overflow-y: auto;
+    height: 100px;
+}
