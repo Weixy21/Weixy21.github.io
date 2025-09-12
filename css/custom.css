@@ -4,3 +4,25 @@
     color: #777;
     border-top: 1px solid #e5e5e5;
 }
+
+/* Desktop styles for navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Mobile styles for navigation */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    /* Hide desktop links and show a hamburger menu icon */
+    .nav-links {
+        display: none;
+    }
+    .hamburger-menu {
+        display: block; /* Show the hamburger icon */
+    }
+}
