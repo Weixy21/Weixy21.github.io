@@ -13,32 +13,10 @@
 	   
       <style>		  
 	    div.scroll { margin:4px, 4px; padding:4px; background-color: white;  width: 900px;  height: 110px;  overflow-x: hidden;  overflow-y: auto;  text-align:justify; }
-	    navstk {float: right;  background-color: #333;  padding: 14px 16px;  text-align: center;  width: 200%;  position: sticky;  top: 0px; overflow: hidden; left: 0; right: 0; margin: 0px;}
+	    navstk {float: center;  background-color: #333;  padding: 14px 16px;  text-align: center;  width: 100%;  position: sticky;  top: 0px; }
 		navstk a { float: center;  color: #f2f2f2;  text-align: center;  padding: 14px 16px;  text-decoration: none;  font-size: 17px; }
 		navstk a:hover {  background-color: #ddd; color: black; }
 		navstk a:focus {  background-color: #04AA6D;  color: white;	}
-		navstk .icon {display: none;  background-color: #ddd; color: black;}
-		@media screen and (max-width: 600px) {
-		  navstk a:not(:first-child) {display: none;}
-		  navstk a.icon {
-		    float: right;
-		    display: block;
-		  }
-		}
-		
-		@media screen and (max-width: 600px) {
-		  navstk.responsive {position: sticky;}
-		  navstk.responsive .icon {
-		    position: sticky;
-		    right: 0;
-		    top: 0;
-		  }
-		  navstk.responsive a {
-		    float: none;
-		    display: block;
-		    text-align: left;
-		  }
-		}
 		hr { margin-top:40px;   margin-bottom:40px; }
 	  </style>
 	   
@@ -47,7 +25,6 @@
    
    <script type="text/javascript">
           function toggle_visibility(id) { var e = document.getElementById(id); if(e.style.display == 'block')   e.style.display = 'none'; else e.style.display = 'block'; }
-	      function myFunction() { var x = document.getElementById("myTopnav"); if (x.className === "navstk") { x.className += " responsive";} else {x.className = "navstk"; }  }
    </script>
    
    
