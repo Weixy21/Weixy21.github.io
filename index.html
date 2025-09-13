@@ -17,6 +17,12 @@
 		navstk a { float: center;  color: #f2f2f2;  text-align: center;  padding: 14px 16px;  text-decoration: none;  font-size: 17px; }
 		navstk a:hover {  background-color: #ddd; color: black; }
 		navstk a:focus {  background-color: #04AA6D;  color: white;	}
+		#mySidenav a {position: sticky; left: -80px; transition: 0.3s; padding: 15px; width: 100px; text-decoration: none; font-size: 20px; color: white; border-radius: 0 5px 5px 0;}
+		#mySidenav a:hover {left: 0;}
+		#Home {top: 20px;background-color: #04AA6D;} 
+		#Group {top: 80px; background-color: #2196F3;}
+        #Talks {top: 140px; background-color: #f44336;}
+		#Publications {top: 200px; background-color: #555}
 		hr { margin-top:40px;   margin-bottom:40px; }
 	  </style>
 	   
@@ -41,6 +47,12 @@
         <a class="active" href="#Talks">Talks</a>
         <a class="active" href="#Publications">Publications</a>
       </navstk>
+	  <div id="mySidenav" class="sidenav">
+	  	  <a href="#Home" id="about">Home</a>
+	 	  <a href="#Group" id="blog">Group</a>
+	  	  <a href="#Talks" id="projects">Talks</a>
+	  	  <a href="#Publications" id="contact">Publications</a>
+	  </div>
 	   
       <div class="container" id="Home">
       <div class="row">
