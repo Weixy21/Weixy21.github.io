@@ -26,12 +26,13 @@
    
    <script type="text/javascript">
           function toggle_visibility(id) { var e = document.getElementById(id); if(e.style.display == 'block')   e.style.display = 'none'; else e.style.display = 'block'; }
+	      function myFunction() { var x = document.getElementById("myTopnav"); if (x.className === "navstk") { x.className += " responsive";} else {x.className = "navstk"; }  }
    </script>
    
    
 <!-- main body -->
    <body>
-      <navstk>
+      <navstk id = "myTopnav">
 		<td style='width:40px;height:20px'> <a imageanchor='1' href='paper_figs/logo.png'><img width='40' src='paper_figs/logo.png' height='20' border='0'  style='border-radius: 5px'/></a></td>
 		<a class="active" href="#">
 			<strong><font color="red">Safe Autonomy and Intellience Lab (SAIL)</font></strong> 
@@ -41,6 +42,9 @@
         <a class="active" href="#Teaching">Teaching</a>
         <a class="active" href="#Talks">Talks</a>
         <a class="active" href="#Publications">Publications</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		    <i class="fa fa-bars"></i>
+		</a>
       </navstk>
 	   
       <div class="container" id="Home">
